@@ -62,8 +62,12 @@ public class MainProgetto {
 					((InterfaceImmagine) elemento).show();
 				}
 
-				System.out.println(
-						"Vuoi aumentare o abbassare la luminosità o il volume? (1 = Aumenta luminosità, 2 = Abbassa luminosità, 3 = Aumenta volume, 4 = Abbassa volume, 5 = Esci)");
+				System.out.println("Esegui le seguenti istruzioni per continuare:");
+				System.out.println("1 = Aumenta luminosità");
+				System.out.println("2 = Abbassa luminosità");
+				System.out.println("3 = Aumenta volume");
+				System.out.println("4 = Abbassa volume");
+				System.out.println("5 = Esci");
 				int opzione = Integer.parseInt(input.nextLine());
 				switch (opzione) {
 				case 1:
@@ -97,7 +101,7 @@ public class MainProgetto {
 				case 5:
 					break;
 				default:
-					System.out.println("Opzione non valida. Riprova.");
+					System.out.println("ERRORE. Riprova.");
 					break;
 				}
 			} else if (decisione != 0) {
