@@ -2,19 +2,19 @@ package progetto;
 
 public class Audio extends Multimedia implements InterfaceRiproduzione {
 
-	private int volume;
-	private int durata;
+	private int volumeAudio;
+	private int durataAudio;
 
 	public Audio(String titolo, int volume, int durata) {
 		super(titolo);
-		this.volume = volume;
-		this.durata = durata;
+		this.volumeAudio = volume;
+		this.durataAudio = durata;
 	}
 
 	@Override
 	public void play() {
-		for (int i = 0; i < durata; i++) {
-			String puntiEsclamativi = "!".repeat(volume);
+		for (int i = 0; i < durataAudio; i++) {
+			String puntiEsclamativi = "!".repeat(volumeAudio);
 			System.out.println(titolo + puntiEsclamativi);
 		}
 	}
@@ -22,15 +22,15 @@ public class Audio extends Multimedia implements InterfaceRiproduzione {
 	@Override
 	public void abbassaVolume() {
 
-		if (volume > 0) {
-			volume--;
+		if (volumeAudio > 0) {
+			volumeAudio--;
 		}
 	}
 
 	@Override
 	public void alzaVolume() {
 
-		volume++;
+		volumeAudio++;
 	}
 
 }
