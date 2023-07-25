@@ -52,6 +52,7 @@ public class MainProgetto {
 		do {
 			System.out
 					.println("Scegli un elemento multimediale da eseguire (1-" + elementi.length + ") o 0 per uscire:");
+
 			decisione = Integer.parseInt(input.nextLine());
 
 			if (decisione >= 1 && decisione <= elementi.length) {
